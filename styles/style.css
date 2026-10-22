@@ -210,7 +210,7 @@ height: 100%;
 opacity: 0;
 }
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  opacity: 1;
+opacity: 1;
 }
 .search-form__label:not(:has(.search-form__textfield)):hover {
 text-decoration: underline;
