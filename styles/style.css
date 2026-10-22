@@ -112,11 +112,11 @@ background-color: rgba(84, 80, 80, 1);
 .content__card-link:hover {
 text-decoration: underline;
 }
+.content__card-link:focus { 
+outline: none; 
+}
 .content__card-link:focus-visible {
 outline: 1px solid #FFF;
-}
-.content__card-link:focus {
-outline: none;
 }
 .content__card-link_current {
 background-color: rgba(84, 80, 80, 1);
@@ -209,8 +209,8 @@ width: 100%;
 height: 100%;
 opacity: 0;
 }
-.search-form__checkbox:checked {
-opacity: 1;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
 }
 .search-form__label:not(:has(.search-form__textfield)):hover {
 text-decoration: underline;
@@ -240,7 +240,7 @@ font-size: 18px;
 color: #fff;
 border: 1px solid #FFF;
 background-color: transparent;
-cursor: pointer
+cursor: pointer;
 }
 .button:hover {
 text-decoration: underline;
